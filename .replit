@@ -1,8 +1,9 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "dotnet-7.0", "dotnet-8.0", "angular-node-20", "bash", "bun-1.2", "c-clang14", "go-1.20", "elixir-1_15", "deno-1", "nodejs-23", "nix", "lua-5.2", "nodejs-22", "nodejs-19", "php-8.1", "php-8.2", "php-8.3", "nodejs-14", "python-base-3.11", "python-3.12", "ruby-3.2", "ruby-3.1", "pyright", "typescript-language-server", "docker", "nodejs-with-prybar-18", "zig-0.11", "ruff", "pyright-extended"]
 run = "node index.js"
 
 [nix]
 channel = "stable-24_05"
+packages = ["deepin.dwayland"]
 
 [deployment]
 run = ["sh", "-c", "node index.js"]
